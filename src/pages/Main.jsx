@@ -1,12 +1,9 @@
 import React from "react";
 import { graph, calcu } from "../assets";
-import {useNavigate} from "react-router-dom"
-
-
+import { useNavigate } from "react-router-dom";
 
 const Main = () => {
-
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <section className="flex row max-w-7xl mx-auto">
       <div className="w-full flex  items-center bg-white sm:px-8 px-4 py-3 border-b border-b-[#e6ebf4]">
@@ -43,14 +40,20 @@ const Main = () => {
               </a>
             </li>
             <li class="mr-6 px-4">
-              <a class="text-black-500 hover:text-black-800" href="/SWP">
+              <button
+                class="text-black-500 hover:text-black-800"
+                onClick={() => navigate("/SWP")}
+              >
                 Lumpsum
-              </a>
+              </button>
             </li>
             <li class="mr-6 px-4">
-              <a class="text-black-500 hover:text-black-800" href="/sip">
+              <button
+                class="text-black-500 hover:text-black-800"
+                onClick={() => navigate("/SIP")}
+              >
                 SIP
-              </a>
+              </button>
             </li>
             <li class="mr-6 px-4">
               <a class="text-black-500 hover:text-black-800" href="#">
@@ -58,9 +61,12 @@ const Main = () => {
               </a>
             </li>
             <li class="mr-6 px-4">
-              <a class="text-black-500 hover:text-black-800" href="/SWP">
+              <button
+                class="text-black-500 hover:text-black-800"
+                onClick={() => navigate("/SWP")}
+              >
                 SWP
-              </a>
+              </button>
             </li>
             <li class="mr-6 px-4">
               <a class="text-black-500 hover:text-black-800" href="#">
@@ -135,7 +141,10 @@ const Main = () => {
               Future value of SIP
             </p>
             <br></br>
-            <button class="bg-white hover:bg-blue-700 text-blue-500 border-2 px-24 py-2 border-blue-500 font-bold  rounded mx-3" onClick={()=>navigate("/SIP")}>
+            <button
+              class="bg-white hover:bg-blue-700 text-blue-500 border-2 px-24 py-2 border-blue-500 font-bold  rounded mx-3"
+              onClick={() => navigate("/SIP")}
+            >
               Calculate Now
             </button>
           </div>
@@ -150,9 +159,10 @@ const Main = () => {
               SIP Required for Target Future Value
             </p>
             <br></br>
-            <button type="button"
+            <button
+              type="button"
               class="bg-white hover:bg-blue-700 text-blue-500 border-2 px-24 py-2 border-blue-500 font-bold  rounded mx-3"
-              onClick={()=>navigate("/SIP")}
+              onClick={() => navigate("/SIP")}
             >
               Calculate Now
             </button>
@@ -170,7 +180,11 @@ const Main = () => {
               Future Value of Limited Period SIP
             </p>
             <br></br>
-            <button onClick={()=>navigate("/SIP")} type="button" class="bg-white hover:bg-blue-700 text-blue-500 border-2 px-24 py-2 border-blue-500 font-bold  rounded mx-3">
+            <button
+              onClick={() => navigate("/SIP")}
+              type="button"
+              class="bg-white hover:bg-blue-700 text-blue-500 border-2 px-24 py-2 border-blue-500 font-bold  rounded mx-3"
+            >
               Calculate Now
             </button>
           </div>
@@ -185,7 +199,11 @@ const Main = () => {
               Limited Period SIP Need Based Calculator
             </p>
             <br></br>
-            <button onClick={()=>navigate("/SIP")} type="button" class="bg-white hover:bg-blue-700 text-blue-500 border-2 px-24 py-2 border-blue-500 font-bold  rounded mx-3">
+            <button
+              onClick={() => navigate("/SIP")}
+              type="button"
+              class="bg-white hover:bg-blue-700 text-blue-500 border-2 px-24 py-2 border-blue-500 font-bold  rounded mx-3"
+            >
               Calculate Now
             </button>
           </div>
@@ -202,7 +220,11 @@ const Main = () => {
               Future value of Step-Up SIP
             </p>
             <br></br>
-            <button onClick={()=>navigate("/SIP")} type="button" class="bg-white hover:bg-blue-700 text-blue-500 border-2 px-24 py-2 border-blue-500 font-bold  rounded mx-3">
+            <button
+              onClick={() => navigate("/SIP")}
+              type="button"
+              class="bg-white hover:bg-blue-700 text-blue-500 border-2 px-24 py-2 border-blue-500 font-bold  rounded mx-3"
+            >
               Calculate Now
             </button>
           </div>
@@ -217,7 +239,11 @@ const Main = () => {
               Step-Up Required For Target Future value
             </p>
             <br></br>
-            <button onClick={()=>navigate("/SIP")} type="button" class="bg-white hover:bg-blue-700 text-blue-500 border-2 px-24 py-2 border-blue-500 font-bold  rounded mx-3">
+            <button
+              onClick={() => navigate("/SIP")}
+              type="button"
+              class="bg-white hover:bg-blue-700 text-blue-500 border-2 px-24 py-2 border-blue-500 font-bold  rounded mx-3"
+            >
               Calculate Now
             </button>
           </div>

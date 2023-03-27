@@ -25,14 +25,20 @@ const SWP = () => {
               </a>
             </li>
             <li class="mr-6 px-4">
-              <a class="text-black-500 hover:text-black-800" href="/SWP">
+              <button
+                class="text-black-500 hover:text-black-800"
+                onClick={() => navigate("/SWP")}
+              >
                 Lumpsum
-              </a>
+              </button>
             </li>
             <li class="mr-6 px-4">
-              <a class="text-black-500 hover:text-black-800" href="/sip">
+              <button
+                class="text-black-500 hover:text-black-800"
+                onClick={() => navigate("/SIP")}
+              >
                 SIP
-              </a>
+              </button>
             </li>
             <li class="mr-6 px-4">
               <a class="text-black-500 hover:text-black-800" href="#">
@@ -40,9 +46,12 @@ const SWP = () => {
               </a>
             </li>
             <li class="mr-6 px-4">
-              <a class="text-black-500 hover:text-black-800" href="/swp">
+              <button
+                class="text-black-500 hover:text-black-800"
+                onClick={() => navigate("/SWP")}
+              >
                 SWP
-              </a>
+              </button>
             </li>
             <li class="mr-6 px-4">
               <a class="text-black-500 hover:text-black-800" href="#">
@@ -421,10 +430,7 @@ const SWP = () => {
                   value=""
                   class="mr-2 leading-tight font-bold mb-2 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
-                <label
-                  for="default-checkbox"
-                  class="ml-2 font-medium"
-                >
+                <label for="default-checkbox" class="ml-2 font-medium">
                   Add suggested schemes for investment
                 </label>
               </div>
